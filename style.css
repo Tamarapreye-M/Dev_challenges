@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: min(90%, 500px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0 0rem 0rem;
+}
+header h1{
+    font-size: 2.25rem;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+
+}
+header h3{
+    font-size: 1.125rem;
+   line-height: 1.7rem;
+   text-transform: uppercase;
+   font-weight: 600;
+   margin-bottom: 0.7rem;
+}
+header p{
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    width: 95%;
+}
+main{
+    width: min(90%, 500px);
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); */
+    grid-template-columns: auto auto;
+    justify-items: center;
+    margin: auto;
+
+}
+main .img-div{
+    display: flex;
+    gap: 0.5rem;
+}
+main .main-div:nth-of-type(even){
+    margin-top: 4rem;
+    
+}
+.main-div span{
+    writing-mode: vertical-lr;
+    font-size: 0.63rem;  
+    line-height: 0.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'PT Serif', serif;
+}
+.main-div h5{
+    font-size: 0.88rem;
+    line-height: 1.3rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    text-transform: capitalize;
+}
+.main-div img{
+    display: inline-block;
+    width: 90%;
+}
+
+footer p {
+    font-family: 'Montserrat';
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+padding-bottom: 1rem;
+/* identical to box height */
+
+text-align: center;
+
+color: #A9A9A9;
+}
+@media screen  and (min-width: 768px) {
+    main{
+        width: 70%;
+        margin: auto;
+       
+    }
+    header{
+        width: 70%;
+        
+        justify-content: space-evenly;
+    }
+   
+    header p{
+        width: 85%;
+    }
+    header p, .main-div h5{
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+    .main-div span{
+        font-size: 0.9rem;
+        line-height: 1rem;
+        
+    }
+    
+}
+@media screen and (min-width: 1024px) {
+    header{
+        width: 70%;
+        margin: auto;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    main{
+        width: 70%;
+        margin: auto;
+        /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+        grid-template-columns: auto auto auto;
+        gap: 3.5rem;
+    }
+    header div{
+        width: 50%;
+    }
+    header p{
+        width: 75%;
+    }
+    main .main-div{
+        width: 18.801 !important;
+    }
+    main .main-div:nth-of-type(even){
+        margin-top: 0rem;
+        
+    }
+    main .main-div:nth-of-type(3n+2){
+        margin-top: 3rem;
+        
+    }
+
+}
